@@ -8,6 +8,10 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: '/node_modules/'
                 
+            } 
+            ,{
+                test: /\.html$/,
+                loader: "raw-loader"
             }
         ]
     },

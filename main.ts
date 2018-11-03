@@ -2,6 +2,7 @@
 
 import * as rxjs from 'rxjs';
 import { Observer } from 'rxjs';
+import './index.html';
 
 let source = rxjs.interval(1000); // rxjs.of(1, 2, 3);
 // let source =
@@ -25,10 +26,9 @@ class MyObserver implements Observer<number> {
   complete() {
     console.log('completed !');
   }
-
 }
 
 let observer = source.subscribe(new MyObserver());
-setTimeout(() => observer.unsubscribe() , 10000 );
+setTimeout(() => observer.unsubscribe(), 10000);
 //  aaa.unsubscribe();
 // console.log('no');
