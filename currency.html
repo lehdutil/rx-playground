@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>currency converter</title>
+</head>
+
+<body>
+    <h2>Convert currencies</h2>
+    <fieldset>
+        <legend>Chose a currency</legend>
+        <input type="radio" name="targetCurrency" value="USD"  checked /><span>$</span>
+        <input type="radio" name="targetCurrency" value="EUR" /><span>€</span>
+        <!-- <input type="radio" name="targetCurrency" value="BTC" /><span>₿ (BTC)</span> -->
+        <input type="radio" name="targetCurrency" value="GBP" /><span>GBP</span>
+        <input type="radio" name="targetCurrency" value="DEN" /><span>DEN</span>    
+        <input type="radio" name="targetCurrency" value="BTC" /><span>BTC</span>
+    </fieldset>
+    <div style="padding: 10px;">
+        <div>Amounth in USD</div>
+        <input type="number" id="amount" value="10" placeholder="enter amounth in $" />
+    </div>
+    <hr />
+    <div style="padding: 10px">
+        <div><strong>Output (converted amount in currency)</strong></div>
+        <input type="text" id="convertedAmounth" readonly />
+        <!-- <input type="text" id="outputRate" readonly /> -->
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
