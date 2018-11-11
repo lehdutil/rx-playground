@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Currency Converter" Height="500" Width="700">
+    <Grid>
+        <Label Content="Enter the amount in USD" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="25" Width="175"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="19,35,0,0" TextWrapping="Wrap" Text="" Name="amount"  VerticalAlignment="Top" Width="175" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" VerticalScrollBarVisibility="Auto" IsReadOnly="True" Height="395" Margin="328,35,0,0" TextWrapping="Wrap" Text="" Name="debugLog"  VerticalAlignment="Top" Width="355" />
+        <RadioButton Content="USD" Name="radioUSD" IsChecked="True" GroupName="targetCurrency" HorizontalAlignment="Left" Margin="19,97,0,0" VerticalAlignment="Top" Height="15" Checked="RadioButton_Checked" Width="52"/>
+        <RadioButton Content="EUR" Name="radioEUR" GroupName="targetCurrency" HorizontalAlignment="Left" Margin="19,117,0,0" VerticalAlignment="Top" Height="15" Width="50" Checked="RadioButton_Checked"/>
+        <RadioButton Content="GBP" Name="radioGBP" GroupName="targetCurrency" HorizontalAlignment="Left" Margin="19,137,0,0" VerticalAlignment="Top" Height="15" Width="50" Checked="RadioButton_Checked" />
+        <RadioButton Content="DEN" Name="radioDEN"  GroupName="targetCurrency" HorizontalAlignment="Left" Margin="19,156,0,0" VerticalAlignment="Top" Height="15" Width="52" Checked="RadioButton_Checked"/>
+        <RadioButton Content="BTC" Name="radioBTC"  GroupName="targetCurrency" HorizontalAlignment="Left" Margin="19,176,0,0" VerticalAlignment="Top" Height="15" Width="47" Checked="RadioButton_Checked"/>
+        <Button Content="&#x2B06;"  HorizontalAlignment="Left" Margin="203,35,0,0" VerticalAlignment="Top" Width="15" Height="22" 
+                Name="buttonIncrement" Click="Button_Click_Increment"/>
+        <Button Content="&#x2B07;" HorizontalAlignment="Left" Margin="223,35,0,0" VerticalAlignment="Top" Width="15" Height="22" 
+                Name="buttonDecrement" Click="Button_Click_Decrement"/>
+        <TextBox HorizontalAlignment="Left" IsReadOnly="true" Height="22" Margin="19,236,0,0" TextWrapping="Wrap" Text="" x:Name="convertedAmounth"  VerticalAlignment="Top" Width="175"  />
+        <Label Content="Converted to currency" HorizontalAlignment="Left" Margin="19,206,0,0" VerticalAlignment="Top" Height="25" Width="175"/>
+        <Label Content="choose a currency" HorizontalAlignment="Left" Margin="19,67,0,0" VerticalAlignment="Top" Height="25" Width="175"/>
+        <Label Content="Log" HorizontalAlignment="Left" Margin="328,5,0,0" VerticalAlignment="Top" Height="25" Width="175"/>
+    </Grid>
+</Window>

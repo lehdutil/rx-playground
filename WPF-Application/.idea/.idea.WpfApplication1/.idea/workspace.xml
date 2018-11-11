@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f094966-9576-4aa7-aa8e-2fbaf7eb1d73" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="132714494">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="1" />
+          <entry key="xaml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="1" />
+          <entry key="XAML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="1332" />
+          <entry key="xaml" value="189" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="1332" />
+          <entry key="XAML" value="189" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WpfApplication1/MainWindow.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <marker date="1541914314632" expanded="true" signature="0:2957" ph="&lt;&lt;Grid&gt;&#10;        &lt;Label Content=&quot;Enter the amount in USD&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;10,10,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;&#10;        &lt;TextBox HorizontalAlignment=&quot;Left&quot; Height=&quot;22&quot; Margin=&quot;19,35,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;amount&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot; TextChanged=&quot;TextBox_TextChanged&quot;/&gt;&#10;        &lt;TextBox HorizontalAlignment=&quot;Left&quot; VerticalScrollBarVisibility=&quot;Auto&quot; IsReadOnly=&quot;True&quot; Height=&quot;376&quot; Margin=&quot;328,10,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;debugLog&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;355&quot; /&gt;&#10;        &lt;RadioButton Content=&quot;USD&quot; Name=&quot;radioUSD&quot; IsChecked=&quot;True&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,97,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Checked=&quot;RadioButton_Checked&quot; Width=&quot;52&quot;/&gt;&#10;        &lt;RadioButton Content=&quot;EUR&quot; Name=&quot;radioEUR&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,117,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot;/&gt;&#10;        &lt;RadioButton Content=&quot;GBP&quot; Name=&quot;radioGBP&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,137,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot; /&gt;&#10;        &lt;RadioButton Content=&quot;DEN&quot; Name=&quot;radioDEN&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,156,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;52&quot; Checked=&quot;RadioButton_Checked&quot;/&gt;&#10;        &lt;RadioButton Content=&quot;BTC&quot; Name=&quot;radioBTC&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,176,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;47&quot; Checked=&quot;RadioButton_Checked&quot;/&gt;&#10;        &lt;Button Content=&quot;&amp;##x2B06;&quot;  HorizontalAlignment=&quot;Left&quot; Margin=&quot;203,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonIncrement&quot; Click=&quot;Button_Click_Increment&quot;/&gt;&#10;        &lt;Button Content=&quot;&amp;##x2B07;&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;223,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonDecrement&quot; Click=&quot;Button_Click_Decrement&quot;/&gt;&#10;        &lt;TextBox HorizontalAlignment=&quot;Left&quot; IsReadOnly=&quot;true&quot; Height=&quot;22&quot; Margin=&quot;19,236,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; x:Name=&quot;convertedAmounth&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot;  /&gt;&#10;        &lt;Label Content=&quot;Converted to currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,206,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;&#10;        &lt;Label Content=&quot;choose a currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,67,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+                <marker date="1541914314632" expanded="true" signature="464:2947" ph="&lt;&lt;Label Content=&quot;Enter the amount in USD&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;10,10,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt; &lt;TextBox HorizontalAlignment=&quot;Left&quot; Height=&quot;22&quot; Margin=&quot;19,35,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;amount&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot; TextChanged=&quot;TextBox_TextChanged&quot;/&gt; &lt;TextBox HorizontalAlignment=&quot;Left&quot; VerticalScrollBarVisibility=&quot;Auto&quot; IsReadOnly=&quot;True&quot; Height=&quot;376&quot; Margin=&quot;328,10,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;debugLog&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;355&quot; /&gt; &lt;RadioButton Content=&quot;USD&quot; Name=&quot;radioUSD&quot; IsChecked=&quot;True&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,97,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Checked=&quot;RadioButton_Checked&quot; Width=&quot;52&quot;/&gt; &lt;RadioButton Content=&quot;EUR&quot; Name=&quot;radioEUR&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,117,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot;/&gt; &lt;RadioButton Content=&quot;GBP&quot; Name=&quot;radioGBP&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,137,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot; /&gt; &lt;RadioButton Content=&quot;DEN&quot; Name=&quot;radioDEN&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,156,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;52&quot; Checked=&quot;RadioButton_Checked&quot;/&gt; &lt;RadioButton Content=&quot;BTC&quot; Name=&quot;radioBTC&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,176,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;47&quot; Checked=&quot;RadioButton_Checked&quot;/&gt; &lt;Button Content=&quot;&amp;##x2B06;&quot;  HorizontalAlignment=&quot;Left&quot; Margin=&quot;203,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonIncrement&quot; Click=&quot;Button_Click_Increment&quot;/&gt; &lt;Button Content=&quot;&amp;##x2B07;&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;223,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonDecrement&quot; Click=&quot;Button_Click_Decrement&quot;/&gt; &lt;TextBox HorizontalAlignment=&quot;Left&quot; IsReadOnly=&quot;true&quot; Height=&quot;22&quot; Margin=&quot;19,236,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; x:Name=&quot;convertedAmounth&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot;  /&gt; &lt;Label Content=&quot;Converted to currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,206,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt; &lt;Label Content=&quot;choose a currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,67,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;.../&gt;" />
+                <marker date="1541914314632" expanded="true" signature="2067:2261" ph="&lt;.../&gt;" />
+                <marker date="1541914314632" expanded="true" signature="2270:2463" ph="&lt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WpfApplication1/MainWindow.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+              <folding>
+                <marker date="1541914242940" expanded="false" signature="6:230" ph="..." />
+                <marker date="1541914242940" expanded="true" signature="257:5289" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="264:342" ph="/// Interaction logic for MainWindow.xaml ... " />
+                <marker date="1541914242940" expanded="true" signature="378:5073" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="412:2546" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="907:1043" ph="/* .Subscribe((x) =&gt; ... */" />
+                <marker date="1541914242940" expanded="true" signature="2144:2303" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="2595:2687" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="2768:2868" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="2962:3165" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="3082:3155" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="3259:3471" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="3375:3461" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="3562:4586" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="3683:4576" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="3916:4562" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="4058:4434" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="4191:4410" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="4672:5067" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="4761:5030" ph="{...}" />
+                <marker date="1541914242940" expanded="true" signature="5109:5287" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WpfApplication1/App.xaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <marker date="1541834768054" expanded="true" signature="0:371" ph="&lt;&lt;Application.Resources&gt;&#10;         &#10;    &lt;/Application.Resources&gt;.../&gt;" />
+                <marker date="1541834768054" expanded="true" signature="294:356" ph="&lt;.../&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Checked</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WpfApplication1/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WpfApplication1/App.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WpfApplication1/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WpfApplication1/App.xaml" />
+        <option value="$PROJECT_DIR$/WpfApplication1/MainWindow.xaml.cs" />
+        <option value="$PROJECT_DIR$/WpfApplication1/MainWindow.xaml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1" />
+    <option name="y" value="-10" />
+    <option name="width" value="1590" />
+    <option name="height" value="965" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="WpfApplication1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="WpfApplication1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="WpfApplication1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="WpfApplication1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="WpfApplication1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MainWindow.xaml" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Crawler/Crawler.sln" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/WpfApplication1/bin/Debug/WpfApplication1.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WpfApplication1/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WpfApplication1/WpfApplication1.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f094966-9576-4aa7-aa8e-2fbaf7eb1d73" name="Default Changelist" comment="" />
+      <created>1541834769333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541834769333</updated>
+      <workItem from="1541834770611" duration="10029000" />
+      <workItem from="1541864143479" duration="1757000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11786000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15284716" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="XAML Preview" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32474226" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WpfApplication1/App.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <marker date="1541834768054" expanded="true" signature="0:371" ph="&lt;&lt;Application.Resources&gt;&#10;         &#10;    &lt;/Application.Resources&gt;.../&gt;" />
+            <marker date="1541834768054" expanded="true" signature="294:356" ph="&lt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WpfApplication1/MainWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <marker date="1541914242940" expanded="false" signature="6:230" ph="..." />
+            <marker date="1541914242940" expanded="true" signature="257:5289" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="264:342" ph="/// Interaction logic for MainWindow.xaml ... " />
+            <marker date="1541914242940" expanded="true" signature="378:5073" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="412:2546" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="907:1043" ph="/* .Subscribe((x) =&gt; ... */" />
+            <marker date="1541914242940" expanded="true" signature="2144:2303" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="2595:2687" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="2768:2868" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="2962:3165" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="3082:3155" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="3259:3471" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="3375:3461" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="3562:4586" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="3683:4576" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="3916:4562" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="4058:4434" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="4191:4410" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="4672:5067" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="4761:5030" ph="{...}" />
+            <marker date="1541914242940" expanded="true" signature="5109:5287" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WpfApplication1/MainWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1541914314632" expanded="true" signature="0:2957" ph="&lt;&lt;Grid&gt;&#10;        &lt;Label Content=&quot;Enter the amount in USD&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;10,10,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;&#10;        &lt;TextBox HorizontalAlignment=&quot;Left&quot; Height=&quot;22&quot; Margin=&quot;19,35,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;amount&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot; TextChanged=&quot;TextBox_TextChanged&quot;/&gt;&#10;        &lt;TextBox HorizontalAlignment=&quot;Left&quot; VerticalScrollBarVisibility=&quot;Auto&quot; IsReadOnly=&quot;True&quot; Height=&quot;376&quot; Margin=&quot;328,10,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;debugLog&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;355&quot; /&gt;&#10;        &lt;RadioButton Content=&quot;USD&quot; Name=&quot;radioUSD&quot; IsChecked=&quot;True&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,97,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Checked=&quot;RadioButton_Checked&quot; Width=&quot;52&quot;/&gt;&#10;        &lt;RadioButton Content=&quot;EUR&quot; Name=&quot;radioEUR&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,117,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot;/&gt;&#10;        &lt;RadioButton Content=&quot;GBP&quot; Name=&quot;radioGBP&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,137,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot; /&gt;&#10;        &lt;RadioButton Content=&quot;DEN&quot; Name=&quot;radioDEN&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,156,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;52&quot; Checked=&quot;RadioButton_Checked&quot;/&gt;&#10;        &lt;RadioButton Content=&quot;BTC&quot; Name=&quot;radioBTC&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,176,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;47&quot; Checked=&quot;RadioButton_Checked&quot;/&gt;&#10;        &lt;Button Content=&quot;&amp;##x2B06;&quot;  HorizontalAlignment=&quot;Left&quot; Margin=&quot;203,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonIncrement&quot; Click=&quot;Button_Click_Increment&quot;/&gt;&#10;        &lt;Button Content=&quot;&amp;##x2B07;&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;223,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonDecrement&quot; Click=&quot;Button_Click_Decrement&quot;/&gt;&#10;        &lt;TextBox HorizontalAlignment=&quot;Left&quot; IsReadOnly=&quot;true&quot; Height=&quot;22&quot; Margin=&quot;19,236,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; x:Name=&quot;convertedAmounth&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot;  /&gt;&#10;        &lt;Label Content=&quot;Converted to currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,206,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;&#10;        &lt;Label Content=&quot;choose a currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,67,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;&#10;    &lt;/Grid&gt;.../&gt;" />
+            <marker date="1541914314632" expanded="true" signature="464:2947" ph="&lt;&lt;Label Content=&quot;Enter the amount in USD&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;10,10,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt; &lt;TextBox HorizontalAlignment=&quot;Left&quot; Height=&quot;22&quot; Margin=&quot;19,35,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;amount&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot; TextChanged=&quot;TextBox_TextChanged&quot;/&gt; &lt;TextBox HorizontalAlignment=&quot;Left&quot; VerticalScrollBarVisibility=&quot;Auto&quot; IsReadOnly=&quot;True&quot; Height=&quot;376&quot; Margin=&quot;328,10,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; Name=&quot;debugLog&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;355&quot; /&gt; &lt;RadioButton Content=&quot;USD&quot; Name=&quot;radioUSD&quot; IsChecked=&quot;True&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,97,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Checked=&quot;RadioButton_Checked&quot; Width=&quot;52&quot;/&gt; &lt;RadioButton Content=&quot;EUR&quot; Name=&quot;radioEUR&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,117,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot;/&gt; &lt;RadioButton Content=&quot;GBP&quot; Name=&quot;radioGBP&quot; GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,137,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;50&quot; Checked=&quot;RadioButton_Checked&quot; /&gt; &lt;RadioButton Content=&quot;DEN&quot; Name=&quot;radioDEN&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,156,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;52&quot; Checked=&quot;RadioButton_Checked&quot;/&gt; &lt;RadioButton Content=&quot;BTC&quot; Name=&quot;radioBTC&quot;  GroupName=&quot;targetCurrency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,176,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;15&quot; Width=&quot;47&quot; Checked=&quot;RadioButton_Checked&quot;/&gt; &lt;Button Content=&quot;&amp;##x2B06;&quot;  HorizontalAlignment=&quot;Left&quot; Margin=&quot;203,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonIncrement&quot; Click=&quot;Button_Click_Increment&quot;/&gt; &lt;Button Content=&quot;&amp;##x2B07;&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;223,35,0,0&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;15&quot; Height=&quot;22&quot; &#10;                Name=&quot;buttonDecrement&quot; Click=&quot;Button_Click_Decrement&quot;/&gt; &lt;TextBox HorizontalAlignment=&quot;Left&quot; IsReadOnly=&quot;true&quot; Height=&quot;22&quot; Margin=&quot;19,236,0,0&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;&quot; x:Name=&quot;convertedAmounth&quot;  VerticalAlignment=&quot;Top&quot; Width=&quot;175&quot;  /&gt; &lt;Label Content=&quot;Converted to currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,206,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt; &lt;Label Content=&quot;choose a currency&quot; HorizontalAlignment=&quot;Left&quot; Margin=&quot;19,67,0,0&quot; VerticalAlignment=&quot;Top&quot; Height=&quot;25&quot; Width=&quot;175&quot;/&gt;.../&gt;" />
+            <marker date="1541914314632" expanded="true" signature="2067:2261" ph="&lt;.../&gt;" />
+            <marker date="1541914314632" expanded="true" signature="2270:2463" ph="&lt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
