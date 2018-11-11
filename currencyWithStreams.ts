@@ -1,6 +1,6 @@
 import './currency.html';
 import { Observable, fromEvent, combineLatest, defer, from, of } from 'rxjs';
-import { map, startWith, skip, tap, switchMap, share } from 'rxjs/operators';
+import { map, startWith, skip, tap, switchMap, share, debounceTime } from 'rxjs/operators';
 
 export class RxCurrency { 
     private currency$: Observable<Event> = fromEvent(document.getElementsByName('targetCurrency'),
@@ -40,6 +40,7 @@ export class RxCurrency {
 
         combineLatest(mappedAmount$.pipe(startWith(10)), mappeedCurrency$.pipe(startWith('USD')))
           .pipe(skip(1))
+          .pipe( debounceTime(300) )
           .pipe(
             tap(([amount, currency]) => console.log(`${amount} - ${currency} `) )  
             ,switchMap(([amount, currency]) => this.getFromServerWithObservable(amount, currency)  ))
@@ -47,9 +48,6 @@ export class RxCurrency {
               console.log(convertedAmount);
               (<HTMLInputElement>(document.getElementById('convertedAmounth'))).value = convertedAmount.toString();
             });
-
-            
-
     }
 
     private getFromServerWithObservable = (amount: number, targetCurrency: string): Observable<number> => {

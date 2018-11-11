@@ -1,14 +1,14 @@
 // alert('hello!');
 
 import { interval, fromEvent, Observer, Observable } from 'rxjs';
-import { map, filter, flatMap, retry, retryWhen, delay } from 'rxjs/operators';
+import { map, filter, flatMap, retry, retryWhen, delay, debounceTime } from 'rxjs/operators';
 import { merge } from 'rxjs/index';
 import './index.html';
 import {  Currency } from './currency';
 import { RxCurrency } from './currencyWithStreams';
 
-//let currency = new Currency();
-let rxCurrency = new RxCurrency();
+let currency = new Currency();
+//let rxCurrency = new RxCurrency();
 
 // export currency;
 
@@ -88,7 +88,7 @@ class MyObserver implements Observer<number> {
   }
 }
 
-// let observer = source.subscribe(new MyObserver());
+let observer = source.subscribe(new MyObserver());
 
 let transformedTimerSource = source.pipe(
   map((value: number) => {
@@ -99,7 +99,15 @@ let transformedTimerSource = source.pipe(
   })
 );
 
-// transformedTimerSource.subscribe(value => console.log(value));
+ transformedTimerSource.subscribe(value => console.log(value));
+
+// mouseSource
+//   .pipe(debounceTime(100))
+//     .subscribe( (value) => console.log(value) );
+
+merge(mouseSource, transformedTimerSource)
+  .pipe( filter( coordiates => coordiates.x <500  ) )
+  .subscribe( coordiates => console.log(coordiates) );
 
 // merge(mouseSource, transformedTimerSource)
 //   .pipe(filter((value: Coordinates) => value.x < 500))

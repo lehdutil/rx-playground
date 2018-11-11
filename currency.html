@@ -6,19 +6,19 @@
 
 <body>
     <h2>Convert currencies</h2>
+    <div style="padding: 30px;">
+        <div><strong>Amount in USD</strong></div>
+        <input type="number" id="amount" value="10" placeholder="enter amounth in $" />
+    </div>
     <fieldset>
-        <legend>Chose a currency</legend>
-        <input type="radio" name="targetCurrency" value="USD"  checked /><span>$</span>
-        <input type="radio" name="targetCurrency" value="EUR" /><span>€</span>
-        <!-- <input type="radio" name="targetCurrency" value="BTC" /><span>₿ (BTC)</span> -->
+        <legend><strong>choose a currency</strong></legend>
+        <input type="radio" name="targetCurrency" value="USD"  checked /><span>$ (USD)</span>
+        <input type="radio" name="targetCurrency" value="EUR" /><span>€ (EUR)</span>
         <input type="radio" name="targetCurrency" value="GBP" /><span>GBP</span>
         <input type="radio" name="targetCurrency" value="DEN" /><span>DEN</span>    
         <input type="radio" name="targetCurrency" value="BTC" /><span>BTC</span>
-    </fieldset>
-    <div style="padding: 10px;">
-        <div>Amounth in USD</div>
-        <input type="number" id="amount" value="10" placeholder="enter amounth in $" />
-    </div>
+    </fieldset>    
+    <br/>
     <hr />
     <div style="padding: 10px">
         <div><strong>Output (converted amount in currency)</strong></div>

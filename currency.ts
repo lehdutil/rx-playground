@@ -1,14 +1,8 @@
 import './currency.html';
-import { Observable, fromEvent } from 'rxjs';
 
 export class Currency {
-  private selection$: Observable<Event> = fromEvent(
-    document.getElementsByName('targetCurrency'),
-    'click'
-  );
 
   constructor() {
-    // this.selection$.subscribe($event => console.log((<HTMLInputElement>$event.target).value ) );
     document.getElementsByName('targetCurrency')
           .forEach(e => e.addEventListener('click', this.currencyChanged));
 
@@ -48,14 +42,8 @@ export class Currency {
   public currencyChanged = ($event: Event): void => {
     const targetCurrency = (<HTMLInputElement>$event.target).value;
     const amount = +(<HTMLInputElement>document.getElementById('amount')).value;
-    console.log(amount);
-
-    console.log(targetCurrency);
+    console.log(`amount: ${amount} , currency: ${targetCurrency}`);
     this.getFromServer(amount, targetCurrency);
-
- 
   }
- 
 }
 
-//console.log(document.getElementsByName('targetCurrency')[0]);
