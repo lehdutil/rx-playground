@@ -24,13 +24,7 @@ namespace WpfApplication1
                 .Select(int.Parse)
                 .Where(x => x > 0)
                 .Throttle(TimeSpan.FromMilliseconds(100))
-                .DistinctUntilChanged()
-                .ObserveOn(SynchronizationContext.Current)
-//                .Subscribe((x) =>
-//               {
-//                   PrependToLog("Rx: amount changed" + x );
-//               })
-                ;
+                .ObserveOn(SynchronizationContext.Current);
 
             var currencySelectionStream =
                 Observable.FromEventPattern(radioUSD, "Checked")
@@ -39,23 +33,23 @@ namespace WpfApplication1
                 .Merge( Observable.FromEventPattern(radioDEN, "Checked") )
                 .Merge( Observable.FromEventPattern(radioBTC, "Checked") )
                 .Select(x => (x.Sender as RadioButton)?.Content.ToString())
-                .DistinctUntilChanged()
-                .ObserveOn(SynchronizationContext.Current)
-//                .Subscribe( x => PrependToLog("Rx: currency changed" + x) )
-                ;
+                .ObserveOn(SynchronizationContext.Current);
 
             amountStream.CombineLatest(currencySelectionStream,
                     (amount, currency) => new {Amount = amount, Currency = currency})
-                .SubscribeOn( NewThreadScheduler.Default ) 
+                .DistinctUntilChanged()
+                .SubscribeOn(NewThreadScheduler.Default)
                 .SelectMany(x => Observable.FromAsync(a => ConvertAmount(x.Currency, x.Amount)))
                 .ObserveOn(SynchronizationContext.Current)
-                .Subscribe(result =>
-                {
-                     PrependToLog($"Rx: result {result}");
-                     convertedAmounth.Text = result.ToString();
-                }, 
-                    error => PrependToLog($"error in stream {error.Message}"), 
-                    () => PrependToLog("Stream completed") ); 
+                ;
+//                .Subscribe(result =>
+//                {
+//                     PrependToLog($"Rx: result {result}");
+//                     convertedAmounth.Text = result.ToString();
+//                }, 
+//                    error => PrependToLog($"error in stream {error.Message}"), 
+//                    () => PrependToLog("Stream completed") 
+//                 ); 
 //                .Subscribe(res => PrependToLog($"Rx: {res.Amount} {res.Currency}"));
 
         }
@@ -89,7 +83,7 @@ namespace WpfApplication1
 
         private void RadioButton_Checked(object sender, System.Windows.RoutedEventArgs e)
         {
-            return;
+//            return;
             var radioButton = sender as RadioButton;
             if( radioButton != null )
             {

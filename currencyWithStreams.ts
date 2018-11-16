@@ -10,33 +10,15 @@ export class RxCurrency {
 
 
     constructor( ) {
-        this.currency$.subscribe( $event => { 
-            console.log($event);
-        } );
-
-        this.amount$.subscribe(  $event => console.log($event) );
 
         let mappedAmount$ =  this.amount$.pipe(map(($event: Event) => +(<HTMLInputElement>$event.target).value ) );
-        mappedAmount$.subscribe(amount => console.log(amount));
+        // mappedAmount$.subscribe(amount => console.log(amount));
 
         let mappeedCurrency$ =  this.currency$.pipe(map(($event: Event) => (<HTMLInputElement>$event.target).value  ) ) ;
-        mappeedCurrency$.subscribe(currentCurrency =>
-          console.log(`currenctCurrency ${currentCurrency} `)
-        );    
+        // mappeedCurrency$.subscribe(currentCurrency =>
+        //   console.log(`currenctCurrency ${currentCurrency} `)
+        // );    
             
-        // combineLatest(mappedAmount$.pipe(startWith(10)) , mappeedCurrency$.pipe(startWith('USD')))
-        //     .pipe( skip(1) )
-        //     .subscribe( ([amount, currency ]) => { 
-        //         console.log(`combined ${amount} - ${currency}`); 
-        //         // this.getFromServer(amount, currency);
-        //         // this.getFromServerWithPromise(amount, currency)
-        //         //     .subscribe( (data) => { 
-        //         //         console.log(data);
-        //         //         (<HTMLInputElement>(document.getElementById('convertedAmounth'))).value = data.result;
-        //         //     } );
-        //         this.getFromServerWithObservable( amount, currency )
-        //             .subscribe( result => console.log(result) );
-        //     } );
 
         combineLatest(mappedAmount$.pipe(startWith(10)), mappeedCurrency$.pipe(startWith('USD')))
           .pipe(skip(1))
@@ -78,28 +60,28 @@ export class RxCurrency {
         });
     } 
 
-    private getFromServer = (amount: number, targetCurrency: string): void => {
-        fetch(`http://localhost:3000/convert/usd/${targetCurrency}/${amount}`)
-            .then(response => {
-                if (!response.ok) throw response.status;
-                else {
-                    response.json().then(data => {
-                        console.log(data);
-                        (<HTMLInputElement>(document.getElementById('convertedAmounth'))).value = data.result;
-                    });
-                }
-            });
-    }
+    // private getFromServer = (amount: number, targetCurrency: string): void => {
+    //     fetch(`http://localhost:3000/convert/usd/${targetCurrency}/${amount}`)
+    //         .then(response => {
+    //             if (!response.ok) throw response.status;
+    //             else {
+    //                 response.json().then(data => {
+    //                     console.log(data);
+    //                     (<HTMLInputElement>(document.getElementById('convertedAmounth'))).value = data.result;
+    //                 });
+    //             }
+    //         });
+    // }
 
-    private getFromServerWithPromise = (amount: number, targetCurrency: string): Observable<any> => {
-        return defer( () => { 
-            return from(fetch(`http://localhost:3000/convert/usd/${targetCurrency}/${amount}`)
-                .then( r => {
-                    if( r.ok ) return r.json();
-                    else return Promise.reject(r.statusText);
-                }   )  );
-        } );
+    // private getFromServerWithPromise = (amount: number, targetCurrency: string): Observable<any> => {
+    //     return defer( () => { 
+    //         return from(fetch(`http://localhost:3000/convert/usd/${targetCurrency}/${amount}`)
+    //             .then( r => {
+    //                 if( r.ok ) return r.json();
+    //                 else return Promise.reject(r.statusText);
+    //             }   )  );
+    //     } );
 
-    }
+    // }
 
 }
