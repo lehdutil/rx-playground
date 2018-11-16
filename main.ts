@@ -4,6 +4,5 @@ import { RxCurrency } from './currencyWithStreams';
 import { SimpleDemo } from './simpleDemo';
 
 //let simpleDemo = new SimpleDemo();
-
 //let currency = new Currency();
-//let rxCurrency = new RxCurrency();
+let rxCurrency = new RxCurrency();

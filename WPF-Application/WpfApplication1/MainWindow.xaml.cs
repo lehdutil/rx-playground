@@ -18,6 +18,7 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
+
             var amountStream = Observable.FromEventPattern<TextChangedEventArgs>(amount, "TextChanged")
                 .Select(x => (x.Sender as TextBox).Text)
                 .Where(x => int.TryParse(x, out var result))
@@ -41,7 +42,6 @@ namespace WpfApplication1
                 .SubscribeOn(NewThreadScheduler.Default)
                 .SelectMany(x => Observable.FromAsync(a => ConvertAmount(x.Currency, x.Amount)))
                 .ObserveOn(SynchronizationContext.Current)
-                ;
 //                .Subscribe(result =>
 //                {
 //                     PrependToLog($"Rx: result {result}");
@@ -50,7 +50,7 @@ namespace WpfApplication1
 //                    error => PrependToLog($"error in stream {error.Message}"), 
 //                    () => PrependToLog("Stream completed") 
 //                 ); 
-//                .Subscribe(res => PrependToLog($"Rx: {res.Amount} {res.Currency}"));
+                ;
 
         }
 
@@ -83,15 +83,13 @@ namespace WpfApplication1
 
         private void RadioButton_Checked(object sender, System.Windows.RoutedEventArgs e)
         {
-//            return;
-            var radioButton = sender as RadioButton;
-            if( radioButton != null )
+            return;
+            if( sender is RadioButton radioButton )
             {
                 var currency = radioButton.Content.ToString();
                 debugLog.Text = currency + Environment.NewLine + debugLog.Text;
                 if (int.TryParse(amount.Text.Trim(), out int parsedAmount))
                 {
-                    //var result =  ConvertAmount(currency, parsedAmount).Result;
                     Task.Run(async () => {
                     var convertedAmount = await ConvertAmount(currency, parsedAmount);
                     Dispatcher.Invoke(() => {
@@ -99,7 +97,6 @@ namespace WpfApplication1
                         convertedAmounth.Text = convertedAmount.ToString();
                     });
                     });
-                    //debugLog.Text = "converted amount: "  + result + Environment.NewLine + debugLog.Text;
                 }
             }
         }

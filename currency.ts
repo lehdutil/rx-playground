@@ -9,12 +9,11 @@ export class Currency {
     document.getElementById('amount').addEventListener('input' , this.amountChanged);
   }
 
-  public amountChanged = ($event: Event) : void => { 
+  private amountChanged = ($event: Event) : void => { 
       const targetCurrency: string = this.getSelectedCurrency();
       const amount : number  = +(<HTMLInputElement>$event.target).value;
       console.log(`cur: ${targetCurrency} amount: ${amount} `);
       this.getFromServer(amount, targetCurrency );
-
   }
 
   private getSelectedCurrency = (): string => { 
@@ -26,7 +25,7 @@ export class Currency {
       return '';
   }
 
-    private getFromServer = (amount: number, targetCurrency: string) : void => {
+   private getFromServer = (amount: number, targetCurrency: string) : void => {
       fetch(`http://localhost:3000/convert/usd/${targetCurrency}/${amount}`)
           .then(response => {
               if (!response.ok) throw response.status;
@@ -39,7 +38,7 @@ export class Currency {
           });
     }
 
-  public currencyChanged = ($event: Event): void => {
+  private currencyChanged = ($event: Event): void => {
     const targetCurrency = (<HTMLInputElement>$event.target).value;
     const amount = +(<HTMLInputElement>document.getElementById('amount')).value;
     console.log(`amount: ${amount} , currency: ${targetCurrency}`);

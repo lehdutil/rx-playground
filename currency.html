@@ -1,28 +1,38 @@
-<html>
+<html lang="en">
 
 <head>
     <title>currency converter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 </head>
 
 <body>
-    <h2>Convert currencies</h2>
+    <div class="jumbotron text-center font-weight-bold">Convert currencies</div>
     <div style="padding: 30px;">
         <div><strong>Amount in USD</strong></div>
         <input type="number" id="amount" value="10" placeholder="enter amounth in $" />
     </div>
-    <fieldset>
+    <fieldset style="margin: 30px;">
         <legend><strong>choose a currency</strong></legend>
-        <input type="radio" name="targetCurrency" value="USD"  checked /><span>$ (USD)</span>
-        <input type="radio" name="targetCurrency" value="EUR" /><span>€ (EUR)</span>
-        <input type="radio" name="targetCurrency" value="GBP" /><span>GBP</span>
-        <input type="radio" name="targetCurrency" value="DEN" /><span>DEN</span>    
-        <input type="radio" name="targetCurrency" value="BTC" /><span>BTC</span>
-    </fieldset>    
+        <input class="form-check-input" type="radio" name="targetCurrency" value="USD" checked />
+        <div class="form-check-label">$ (USD)</div>
+        <input class="form-check-input" type="radio" name="targetCurrency" value="EUR" />
+        <div class="form-check-label">€ (EUR)</div>
+        <input class="form-check-input" type="radio" name="targetCurrency" value="GBP" />
+        <div class="form-check-label">£ (GBP)</div>
+        <input class="form-check-input" type="radio" name="targetCurrency" value="DEN" />
+        <div class="form-check-label">DEN</div>
+        <input class="form-check-input" type="radio" name="targetCurrency" value="BTC" />
+        <div class="form-check-label">₿ (BTC)</div>
+    </fieldset>
+    
     <br/>
     <hr />
-    <div style="padding: 10px">
+    <div style="margin: 30px;">
         <div><strong>Output (converted amount in currency)</strong></div>
-        <input type="text" id="convertedAmounth" readonly />
+        <input class="form-control" type="text" id="convertedAmounth" readonly />
         <!-- <input type="text" id="outputRate" readonly /> -->
     </div>
     <script src="app.js"></script>
