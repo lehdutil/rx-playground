@@ -42,14 +42,14 @@ namespace WpfApplication1
                 .SubscribeOn(NewThreadScheduler.Default)
                 .SelectMany(x => Observable.FromAsync(a => ConvertAmount(x.Currency, x.Amount)))
                 .ObserveOn(SynchronizationContext.Current)
-//                .Subscribe(result =>
-//                {
-//                     PrependToLog($"Rx: result {result}");
-//                     convertedAmounth.Text = result.ToString();
-//                }, 
-//                    error => PrependToLog($"error in stream {error.Message}"), 
-//                    () => PrependToLog("Stream completed") 
-//                 ); 
+                .Subscribe(result =>
+                {
+                     PrependToLog($"Rx: result {result}");
+                     convertedAmounth.Text = result.ToString();
+                }, 
+                    error => PrependToLog($"error in stream {error.Message}"), 
+                    () => PrependToLog("Stream completed") 
+                 ); 
                 ;
 
         }

@@ -11,12 +11,13 @@ export class SimpleDemo {
 
 
 let source = interval(1000); // of(1, 2, 3);
+// source.subscribe(  v=> console.log(v) );
 
-//var mySubcriber =  source.subscribe( value => console.log(`value : ${value} `)  );
+var mySubcriber =  source.subscribe( value => console.log(`value : ${value} `)  );
 
-// setTimeout(  ()=> { 
-//   mySubcriber.unsubscribe()
-// }, 6000 );
+setTimeout(  ()=> { 
+  mySubcriber.unsubscribe()
+}, 6000 );
 
 
 let mouseSource = fromEvent(document, 'mousemove').pipe(
@@ -33,7 +34,7 @@ let mouseSource = fromEvent(document, 'mousemove').pipe(
 let button = document.getElementById('button');
 
 let clicks = fromEvent(button, 'click');
-//clicks.subscribe(ev => console.log(`mouse clicked ${ev.target}`));
+clicks.subscribe(ev => console.log(`mouse clicked ${ev.target}`));
 
 class MyObserver implements Observer<number> {
   closed?: boolean;
@@ -65,10 +66,10 @@ let transformedTimerSource = source.pipe(
 //transformedTimerSource.subscribe(value => console.log(value));
 
 merge(mouseSource, transformedTimerSource)
-  //.pipe(filter(coordiates => coordiates.x < 500))
-  //.pipe(debounceTime(100))
-  //.pipe( filter( (value) => value.y >0 ) )
-  ;//.subscribe(coordiates => console.log(coordiates));
+  .pipe(filter(coordiates => coordiates.x < 500))
+  .pipe(debounceTime(100))
+  .pipe( filter( (value) => value.y >0 ) )
+  .subscribe(coordiates => console.log(coordiates));
 
 
 // setTimeout(() => {
